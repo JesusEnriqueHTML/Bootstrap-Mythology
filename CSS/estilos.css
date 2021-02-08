@@ -1,0 +1,309 @@
+/*En el CSS unicamente lo uso para poner los fondos, margenes y otros elementos*/
+/*Fui eliminado algunos estilos que no me hacia falta*/
+/*Aunque sigue habiendo algunas que ya no se utilizan en la pagina*/
+/*En toda la pagina tendra un fondo y usara la misma fuente del texto*/
+body{
+  background-image: url(./IMG/FONDO/2745.jpg);
+  font-family: 'Crete Round', serif;
+}
+
+/*Cabecera*/
+/*id que creo yo sin bootstrap*/
+/*le añado bordes y le inserto estilos al borde, al igual que en el anterior tendra una imagen de fondo*/
+/*Hago estilos para que el texto estea centrado*/
+#header{
+  border: 5px;
+  border-style: solid;
+  background-image: url(./IMG/FONDO/fondo1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  /*Tal como este existe estilos que podria deshacerme y utilizar estilos de bootstrap, aunque en el principio
+  no lo sabia*/
+  text-align: center;
+}
+/*Selector de atributo para unicamente darle estilos al h1 que tenga una clase en especifico*/
+/*Cambiamos el tipo de fuente y el tamaño de la fuente*/
+h1[class="mt-3"]{
+  font-family: 'Flavors', cursive;
+  font-size: 50px;
+}
+/*Barra de navegacion*/
+/*Añado un fondo, un borde y redondeo del fondo*/
+.navegacion{
+  border: 1px solid black;
+  border-radius: 12px;
+  background-image: url(./IMG/FONDO/2745.jpg);
+}
+/*Tamaño y margenes de la imagen*/
+/*Toda este regla de estilos CSS se podria borrar para utilizar unicamente clases de bootstrap, aunque en el 
+de las imagenes ya utiliza las clases de bootstrap*/
+.imagen{
+  height: 50px;
+  width: 80px;
+  margin-right: 10px;
+}
+img[src= "CSS/IMG/logo.png"]{
+  height: 50px;
+  width: 80px;
+  margin-right: 10px;
+}
+img[src= "../CSS/IMG/logo.png"]{
+  height: 50px;
+  width: 80px;
+  margin-right: 10px;
+}
+img[src="CSS/IMG/Japon/banderaJapon.png"]{
+  height: 50px;
+  width: 80px;
+  margin-right: 10px;
+}
+/*texto den negrita y el tamaño de la fuente*/
+nav a.navbar-brand{
+  font-weight: bold;
+  font-size: 30px;
+}
+/*Anchura*/
+.presentacion{
+  width: 100px;
+}
+/*Color, borde, fuente en negrita y el posicionameiento en el centro*/
+ul.navbar-nav li{
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  background-position: center;
+  border: 1px solid black;
+}
+/*todos los enlaces tendran y cambiaran de estilos a la hora de estar ya visitados o activos*/
+/*Si ya fueron visitados*/
+a:visited {
+  color: fuchsia;
+  background-color: transparent;
+  text-decoration: none;
+}
+/*Si no fueron visitados*/
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+/*tamaño de imagenes*/
+.imagen2{
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+img[src="CSS/IMG/H.Plovecraft/necronomicon.png"]{
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+img[src="../CSS/IMG/H.Plovecraft/necronomicon.png"]{
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+img[src="CSS/IMG/Japon/folklorejapones.jpg"]{
+  height: 630px;
+  width: 700px;
+  margin-right: 10px;
+}
+img[src="../../../CSS/IMG/Japon/animales/animales.jpg"]{
+  height: 260px;
+  width: 400px;
+}
+/*Al estar encima cambia el fondo*/
+#lovecraft:hover{
+  background-image: url(./IMG/FONDO/fondoHP.jpg);
+  background-position: center;
+  background-size: cover;
+}
+ul.navbar-nav li:hover{
+  background-image: url(./IMG/FONDO/fondo4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+/*Cambia el tipo de fuente y el tamaño*/
+#love{
+font-family: 'Eater', cursive;
+font-size: 30px;
+
+}
+
+/*Barra de navegacion*/
+
+/*Alto de una imagen*/
+img[src="CSS/IMG/Japon/shinigami.jpg"]{
+  height: 200px;
+}
+/*Margen, borde y fondo, incluyendo sus estilos*/
+.derecha{
+  margin-left: 100px;
+  border: 1px solid black;
+  margin-right:49px;
+  background: url(./IMG/FONDO/fondo1.jpg);
+  background-size: cover;
+  position: center;
+}
+/*borde, fondo y el tipo de fuente*/
+#titulo{
+  border: 4px solid black;
+  background-image: url(./IMG/FONDO/fondo3.jpg);
+  background-size: cover;
+  position: center;
+  font-family: 'Flavors', cursive;
+}
+/*La primera linea, tendra un margen a la izquierda*/
+.derecha::first-line{
+  margin-left: 300px;
+}
+/*Ancho y alto de una imagen*/
+img[src="CSS/IMG/leyenda.jpg"]{
+  height: 300px;
+  width: 300px;
+}
+/*borde, alineamiento del texto, margen y fondo*/
+.izquierda{
+    border: 1px solid black;
+    text-align: center;
+    margin-right: 20px;
+    width: 300px;
+    background: url(./IMG/FONDO/fondo4.jpg);
+    background-size: cover;
+    position: center;
+}
+/*borde*/
+.izquierda h2{
+  border: 4px solid black;
+}
+/*Tamaño y ancho de la imagen*/
+img[src="CSS/IMG/leyenda.jpg"]{
+  height: 200px;
+  width: 300px;
+}
+img[src="CSS/IMG/logo1.png"]{
+  height: 195px;
+  width: 195px;
+}
+img[src="../../../CSS/IMG/logo1.png"]{
+  height: 195px;
+  width: 195px;
+}
+img[src="../CSS/IMG/logo1.png"]{
+  height: 195px;
+  width: 195px;
+}
+/*Fondo, margenes y bordes*/
+footer{
+    background: url(./IMG/FONDO/fondo1.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 2px solid black;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+/*Margen*/
+#presentacion p{
+  margin-top: 10px;
+}
+/*Texto que estara dentro del propio div*/
+.contenido{
+  margin-right: 300px;
+}
+/*bordes*/
+.contenidoM{
+  border: 3px solid black;
+}
+.contenidol{
+  border: 3px solid black;
+}
+/*anchura*/
+#galeria{
+  width: 20px;
+}
+/*borde, margenes, espaciado y anchura*/
+nav.navegacionA {
+  border: 1px solid black;
+  margin-top: 20%;
+  margin-right: 50%;
+  margin-left: 20%;
+  padding-right: 30%;
+  padding-left: 30%;
+  width: 50%;
+}
+/*borde*/
+nav.navegacionA a {
+  border: 1px solid black;
+}
+/*fondo*/
+nav.navegacionA a:hover{
+  background: url(./IMG/FONDO/fondo4.jpg);
+}
+/*borde*/
+button[class="btn btn-secondary btn-lg btn-block "]{
+  border: 2px solid black;
+}
+/*fondo*/
+.paginacion{
+  background: black;
+}
+/*anchura*/
+.respresentacion{
+  width: 290px;
+}
+/*tamaño de la fuente, color, margen, redondeo del borde y alineamiento del texto*/
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+/*Si el boton esta activo tedra un fondo y un color de letra diferente*/
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
+}
+/*anchura*/
+.port-image
+{
+    width: 100%;
+}
+/*margen*/
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+/*tamaño y margen de la imagen*/
+.galeria{
+  width: 200px;
+  height: auto;
+  margin: 30px;
+}
+/*margen, alineamiento de  texto, anchura*/
+.galeriaT{
+  text-align: center;
+  border: 1px solid black;
+  width: 200px;
+  margin-left: 40px;
+  margin-right: 15px;
+}
+/*espaciado*/
+.altasImagenes{
+  padding: 10%;
+}

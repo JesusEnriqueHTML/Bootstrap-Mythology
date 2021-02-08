@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="CSS/estilos.css">
+    <!--Link utilizado para poder utilizar bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!--Link para utilizar los elementos de javascript de bootstrap-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Eater&family=Flavors&family=Fontdiner+Swanky&family=Nosifer&display=swap" rel="stylesheet">
+    <link rel="shortout icon" href="CSS/IMG/H.Plovecraft/necronomicon.png">
+
+    <title>Mitologia</title>
+  </head>
+  <body>
+    <!--Div con una clase para definir la cabecera y alinear el texto al centro-->
+    <div class="card-header text-center" id="header">
+                <!--Sera un grid en fila con un espaciado-->
+      <div class="row justify-content-between">
+        <!--Difino un display grid para colocar en fila todo el contenido del header-->
+          <!--En este caso seria un h1 y dos imagnes-->
+                    <!--Definimos el tamaño de las columnas-->
+        <div class="col-4">
+                                              <!--Defino el ancho de la imagen-->
+          <img src="CSS/IMG/logo3.png" alt="" class="w-25">
+        </div>
+        <div class="col-4">
+                    <!--Le pongo un margen top de 3%-->
+          <h1 class="mt-3">MITOLOGIA</h1>
+        </div>
+        <div class="col-4">
+          <img src="CSS/IMG/logo3.png" alt="" class="w-25">
+        </div>
+      </div>
+    </div>
+    <br>
+    <!--Div que contendra toda la barra de navegacion que saldra al pulsar el boton-->
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="p-4">
+          <!--Contenido-->
+          <div class="container navegacion">
+            <!--Definimos el colapso de los botones-->
+              <nav class="navbar navbar-expand-lg">
+                <!--Titulo de la barra de navegacion y el texto sera oscuro-->
+                <a class="navbar-brand text-dark" href="#">Mitologia</a>
+                <img src="CSS/IMG/logo.png" alt="">
+                <!--Para incluir la compatibilidad con elementos desplegables-->
+          <ul class="navbar-nav">
+          <!--En todos los items les añado un margen y en el enlace tambien le pongo otro poco de margenes-->
+            <!--Difinimos todos los objetos que tendra nuestra barra de navegacion-->
+            <li class="nav-item active mr-3">
+              <!--Link que pertenece a una barra de navegacion-->
+            <a class="nav-link text-dark mt-3" data-toggle="tooltip" data-placement="top" title=" Home" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <!--Sera un menu desplegable con varios enlaces dentro-->
+            <li class="nav-item dropdown mr-3">
+            <a class="nav-link dropdown-toggle text-dark mt-3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Paises
+            </a>
+            <!--Todos los enlaces que estaran dentro del desplegable-->
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item mt-3" href="Japon.html">Japon</a>
+                                    <!-- Al no tener nada hecho decidi desactivar el enlace para que no se pueda
+                                    enviar a ninguna pagina. ni tampoco pulsar -->
+              <a class="dropdown-item disabled" href="#">Griega</a>
+              <a class="dropdown-item disabled" href="#">Nordica</a>
+              <!--Div que sera una linea para dividir los diferentes enlaces-->
+              <div class="dropdown-divider"></div>
+              <!--Mensaje de informacion que volvera enviar a la pagina que esta creada-->
+              <a class="dropdown-item" href="Japon.html">Actualmente solo existe Japon</a>
+            </div>
+          </li>
+          <li class="nav-item mr-3">
+            <!--Creo un modal que en un popUp creeara un formulario para relizar un registro-->
+            <button type="button" class="btn border border-0 float-sm-right mt-3" data-toggle="modal" data-target=".bd-example-modal-lg">Crear Usuario</button>
+              <!--Contenido que hay dentro del modal-->
+              <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <!--Formulario-->
+                      <form action="">
+                        <div class="form-group">
+                          <br>
+                          <label for="exampleFormControlFile1">Selecione su foto de perfil</label>
+                          <!--FILE-->
+                          <input type="file" class="form-control-file ml-5" id="exampleFormControlFile1">
+                        </div>
+                        <div class="form-group">
+                          <!--TEXT-->
+                          <label for="nombre">Nombre</label>
+                          <input type="text" class="form-control" id="nombre" aria-describedby="" placeholder="Enter name">
+                          <!--TEXT-->
+                          <label for="apellido">Apellidos</label>
+                          <input type="text" class="form-control" id="apellido" aria-describedby="" placeholder="Enter surname">
+                          <!--EMAIL-->
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                          <!--Texto pequeño de un color mas claro-->
+                          <small id="emailHelp" class="form-text text-muted">Introduzca un correo que suela mirar periodicamente para poder recibir todas las ventajas</small>
+                        </div>
+                        <div class="form-group">
+                        <!--PASSWORD-->
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                          <!--TEXTAREA-->
+                          <label for="exampleFormControlTextarea1">Example textarea</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-check">
+                          <!--CHECKBOX-->
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Nos permites mandar publicidad a tu correo</label>
+                          <br>
+                          <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                          <label class="form-check-label" for="exampleCheck2">Aceptas los criterios de seguridad</label>
+                        
+                        </div>
+                          <!--ENVIAR-->
+                        <button type="submit" class="btn btn-primary">Submit</button>
+      
+                      </form>
+                  </div>
+                </div>
+              </div>
+          </li>
+            <li class="nav-item mr-3 w-100" id="lovecraft">
+              <a class="navbar-brand nav-link text-dark mt-3" href="#">
+                <img src="CSS/IMG/H.Plovecraft/necronomicon.png" class="d-inline-block" alt="">
+                <span id="love">H.P lovecraft</span>
+              </a>
+            </li>
+            
+      
+          </ul>
+      </nav>
+      </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark">
+        <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+   <!-- <div class="container navegacion">
+      <!--Definimos el colapso de los botones
+        <nav class="navbar navbar-expand-lg">
+          <!--Titulo de la barra de navegacion y el texto sera oscuro
+          <a class="navbar-brand text-dark" href="#">Mitologia</a>
+          <img src="CSS/IMG/logo.png" alt="">
+          <!--Para incluir la compatibilidad con elementos desplegables
+    <ul class="navbar-nav">
+      <!--Difinimos todos los objetos que tendra nuestra barra de navegacion
+      <li class="nav-item  active">
+        <!--Link que pertenece a una barra de navegacion
+      <a class="nav-link text-dark data-toggle="tooltip" data-placement="top" title=" Home"" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown ">
+      <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Paises
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="Japon.html">Japon</a>
+        <a class="dropdown-item disabled" href="#">Griega</a>
+        <a class="dropdown-item disabled" href="#">Nordica</a>ç
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="Japon.html">Actualmente solo existe Japon</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="btn border border-0 float-sm-right" data-toggle="modal" data-target=".bd-example-modal-lg">Crear Usuario</button>
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="">
+                  <div class="form-group">
+                    <br>
+                    <label for="exampleFormControlFile1">Selecione su foto de perfil</label>
+                    <input type="file" class="form-control-file ml-5" id="exampleFormControlFile1">
+                  </div>
+                  <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" aria-describedby="" placeholder="Enter name">
+
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" class="form-control" id="apellido" aria-describedby="" placeholder="Enter surname">
+
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">Introduzca un correo que suela mirar periodicamente para poder recibir todas las ventajas</small>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Example textarea</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Nos permites mandar publicidad a tu correo</label>
+                    <br>
+                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                    <label class="form-check-label" for="exampleCheck2">Aceptas los criterios de seguridad</label>
+                  
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+
+                </form>
+            </div>
+          </div>
+        </div>
+    </li>
+      <li class="nav-item" id="lovecraft">
+        <a class="navbar-brand nav-link text-dark" href="#">
+          <img src="CSS/IMG/H.Plovecraft/necronomicon.png" class="d-inline-block" alt="">
+          <span id="love">H.P lovecraft</span>
+        </a>
+      </li>
+      
+
+    </ul>
+</nav>
+</div>-->
+<br>
+    <div class="Container">
+      <!--Tendra un flex row reverse para cambiar la posicion de las columnas-->
+        <div class="d-flex flex-row-reverse">
+                                <!--Clase creada por mi-->
+          <div class="container derecha">
+            <br>
+            <h1 id="titulo">Que es la Mitologia? <br> Diferencia entre la mitología y leyenda</h1>
+<br>
+
+
+            <div class="container contenidoM ">
+              <!--Sera un contenedor flotante y tendra los bordes con un toque redondeado-->
+              <img src="CSS/IMG/Japon/shinigami.jpg" class="img-thumbnail rounded float-left" alt="">
+              <p>La mitología es un conjunto de mitos relativamente cohesionados o paralelamente adheridos: relatos que forman parte de una determinada religión o cultura. También se les denomina mitos a los discursos, narraciones o expresiones culturales de origen sagrado, y que posteriormente fueron secularizados y tratados como discursos relativos a una cultura, a una época o a una serie de creencias de carácter imaginario.
+                <br><br>
+              Los mitos son relatos basados en la tradición y en la leyenda, creados para explicar el universo, el origen del mundo, los fenómenos naturales y así como también para cualquier suceso para el cual no haya una explicación conocida. Sin embargo, no todos los mitos tienen por qué tener este propósito explicativo. Igualmente, la mayoría de los mitos están relacionados con una fuerza natural o deidad, pero muchos son simplemente historias y leyendas que se han ido transmitiendo oralmente de generación en generación</p>
+            </div>
+            <br>
+            <div class="container contenidol">
+                  <!--Sera un contenedor flotante y tendra los bordes con un toque redondeado-->
+              <img src="CSS/IMG/leyenda.jpg" class="img-thumbnail rounded float-right" alt="">
+              <p>Una leyenda es una narración sobre hechos sobrenaturales, naturales o una mezcla de ambos que se transmite de generación en generación de forma oral o escrita. Generalmente, el relato se sitúa de forma imprecisa entre el mito y el suceso verídico, lo que le confiere cierta singularidad.
+<br><br>
+              Lo ubica en un tiempo y lugar similar al de los miembros de una comunidad, lo que aporta cierta, verosimilitud al relato. En las leyendas se presentan elementos sobrenaturales como milagros, la presencia de criaturas feéricas o de ultratumba, etc.Y estos sucesos se presentan como reales, forman parte de la visión del mundo propia o emic de la comunidad en la que se origina la leyenda.
+  <br><br>
+              En su proceso de transmisión a través de la tradición oral, las leyendas experimentan a menudo supresiones, añadidos o modificaciones culturales que dan origen a todo un mundo lleno de variantes. Las más comunes es la "cristalización" de leyendas paganas o la adaptación a la visión infantil, cuando el cambio de los tiempos ha reducido las antiguas cosmovisiones.</p>
+            </div>
+            <br>
+            <!--Grupos de botones-->
+            <div class="container btn-group">
+              <!--Sera un GRID-->
+              <div class="row">
+                <div class="col-sm">
+                  <!--Le añado a todos el ancho y el alto de los botones-->
+                  <button type="button" class="btn btn-default w-100 h-100"><a href="Japon.html"><img src="CSS/IMG/sakura.jpg" alt="yukisake Onna" class="img-thumbnail respresentacion w-100 h-100"></a></button>
+
+                </div>
+                <div class="col-sm">
+                  <!--Tendra un tooltip para que al non tener un link, porque la pagina no esta hecha y esta desabilitada, le pongo un tooltip para informar que no esta hecha-->
+                  <button type="button" class="btn btn-default w-100 h-100 disabled" data-toggle="tooltip" data-placement="top" title="Lo sentimos actualmente esta en desarrollo"><img src="CSS/IMG/mitologianordica.jpg" alt="tanuki" class="img-thumbnail respresentacion"></button>
+                </div>
+                <div class="col-sm">
+                  <button type="button" class="btn btn-default w-100 h-100 disabled" data-toggle="tooltip" data-placement="top" title="Lo sentimos actualmente esta en desarrollo"><img src="CSS/IMG/mGri.jpg" alt="tanuki" class="img-thumbnail respresentacion w-100 h-100"></button>
+                </div>
+              </div>
+            </div>
+            <br>
+          </div>
+          <br>
+          <div class="izquierda">
+            <br>
+              <h1>Sobre Mi</h1>
+
+                  <img src="CSS/IMG/logo2.jpg" alt="">
+              <div class="container" id="presentacion">
+                  <p>"Un héroe puede ser cualquiera. Incluso un hombre haciendo algo tan simple y tranquilizador como poner un abrigo alrededor de los hombros de un joven para hacerle saber que el mundo no ha terminado."</p>
+              </div>
+                <img src="CSS/IMG/logo1.png" alt="">
+          </div>
+        
+        </div>
+    </div>
+
+
+  </body>
+  <!--Indicamos que sea un footer y que tenga todo alineado en el centro-->
+  <footer class="card-footer text-center">
+      <p>Pagina web creada por Jesus Enrique Rozas Pena
+        <!--Icono bootstrap sacada de la pagina de bootstrap https://icons.getbootstrap.com/icons/wrench/-->
+        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-wrench" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M.102 2.223A3.004 3.004 0 0 0 3.78 5.897l6.341 6.252A3.003 3.003 0 0 0 13 16a3 3 0 1 0-.851-5.878L5.897 3.781A3.004 3.004 0 0 0 2.223.1l2.141 2.142L4 4l-1.757.364L.102 2.223zm13.37 9.019L13 11l-.471.242-.529.026-.287.445-.445.287-.026.529L11 13l.242.471.026.529.445.287.287.445.529.026L13 15l.471-.242.529-.026.287-.445.445-.287.026-.529L15 13l-.242-.471-.026-.529-.445-.287-.287-.445-.529-.026z"/>
+        </svg>
+        
+
+      </p>
+      <!--Tendra un fondo y un color de letra oscuro-->
+      <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#myModal">Conoce mas sobre Mi</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+  <div class="modal-content">
+    <!--Titulo del modal-->
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <!--Cuerpo del modal que contendra una lista sin estilos-->
+    <div class="modal-body">
+      <ul>
+        <li>Nombre : Jesus Enrique</li>
+        <li>Apellidos : Rozas Pena</li>
+        <li>Numero de Contacto : 647039647</li>
+        <li>Localidad: Burela,Lugo,Galicia</li>
+      </ul>
+      </div>
+      <div class="modal-footer">
+        <!--Boton para cerrar el modal-->
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</div>
+  </footer>
+  <!--Usado para que fincione correctamente el tooltip-->
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+    </script>
+
+</html>
